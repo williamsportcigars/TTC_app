@@ -1,0 +1,14 @@
+# Normalize line endings to LF for everyone, regardless of OS/editor.
+# Without this, npm on Windows periodically rewrites package-lock.json
+# (and other generated files) with different line endings than what's
+# committed, which git then reports as a local change and blocks `git
+# pull` with a merge conflict.
+* text=auto eol=lf
+
+# Binary assets — never touch these.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.ttf binary
+*.otf binary
